@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRA System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        accent: '#8B5CF6',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .btn-shadow {
+                box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+            }
+            .btn-hover {
+                transition: all 0.3s ease;
+            }
+            .btn-hover:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-light to-blue-50 min-h-screen font-inter text-dark flex flex-col items-center justify-center p-4">
+    <div class="max-w-2xl w-full bg-white rounded-2xl shadow-xl p-8 md:p-12 relative overflow-hidden">
+        <!-- 装饰元素 -->
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full"></div>
+        <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-secondary/10 rounded-full"></div>
+        
+        <div class="relative">
+            <h1 class="text-[clamp(1.5rem,4vw,2rem)] font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
+                RRA System
+            </h1>
+            
+            <div class="space-y-2 md:space-y-3">
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xMPK-qXiV0KvdiBcioId255BL1DBHbVAloZp2uVfEydUNTRCNEk5SlAwMTk4STlaOFNJUjNCSkQ0WC4u" 
+                   class="block w-full rounded-xl bg-secondary hover:bg-secondary/90 text-white font-medium py-2 px-6 flex items-center justify-center gap-3 transition-all duration-300 btn-shadow btn-hover">
+                    <span class="text-base md:text-lg">DTP</span>
+                </a>
+                
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xMPK-qXiV0KvdiBcioId20KF0_0ml-1CvAtAwgXPQohUQVFQNU5OTDBQRzhXS1RTMVZFODdUWUdHSS4u&origin=QRCode&wdLOR=c18A3C3EE-AE3D-4214-9A68-32792BFE7AF8" 
+                   class="block w-full rounded-xl bg-secondary hover:bg-secondary/90 text-white font-medium py-2 px-6 flex items-center justify-center gap-3 transition-all duration-300 btn-shadow btn-hover">
+                    <span class="text-base md:text-lg">HAP</span>
+                </a>
+                
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xMPK-qXiV0KvdiBcioId28UMtvzuYzlBqCZbTofHhStUQ0JRUTlQN1pVOENJRzRFRjBNVkcyTFRZVC4u" 
+                   class="block w-full rounded-xl bg-secondary hover:bg-secondary/90 text-white font-medium py-2 px-6 flex items-center justify-center gap-3 transition-all duration-300 btn-shadow btn-hover">
+                    <span class="text-base md:text-lg">PSD</span>
+                </a>
+                
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xMPK-qXiV0KvdiBcioId28CFHcpYtPlKscFfAhyZpx9UOUFCU05CVUFJUTNZOVlRVEhJMURLWjI4VS4u" 
+                   class="block w-full rounded-xl bg-secondary hover:bg-secondary/90 text-white font-medium py-2 px-6 flex items-center justify-center gap-3 transition-all duration-300 btn-shadow btn-hover">
+                    <span class="text-base md:text-lg">GEE</span>
+                </a>
+                
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xMPK-qXiV0KvdiBcioId28QbkygH3upImPLlyep9YLxUMEZUOUNTVTc3SjNMSDRTWEVDN0szMkpQUS4u&origin=QRCode" 
+                   class="block w-full rounded-xl bg-secondary hover:bg-secondary/90 text-white font-medium py-2 px-6 flex items-center justify-center gap-3 transition-all duration-300 btn-shadow btn-hover">
+                    <span class="text-base md:text-lg">SPSD</span>
+                </a>
+                
+                <a href="https://forms.office.com/r/eatFY355UR" 
+                   class="block w-full rounded-xl bg-secondary hover:bg-secondary/90 text-white font-medium py-2 px-6 flex items-center justify-center gap-3 transition-all duration-300 btn-shadow btn-hover">
+                    <span class="text-base md:text-lg">WHS</span>
+                </a>
+
+
+
+            </div>
+            
+            <div class="mt-12 text-center text-gray-500 text-sm">
+                <p>© 3M | Guangzhou Plant</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    
